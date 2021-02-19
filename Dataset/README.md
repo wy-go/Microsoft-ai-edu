@@ -143,7 +143,7 @@ img, *imgs = [Image.open(f) for f in sorted(glob.glob(fp_in))]
 img.save(fp=fp_out, format='GIF', append_images=imgs,
          save_all=True, duration=25, loop=0)
 ```
-![gif](img.gif)
+![gif](image.gif)
 
 ## 2  非线性多分类器
 
