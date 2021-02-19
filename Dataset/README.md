@@ -21,10 +21,15 @@ Y = df['z']
 ```
 
        x      y           z
+       
 0  64.32   6.21  236.522049
+
 1   9.76  86.65 -283.187014
+
 2  18.33  32.97  -48.807113
+
 3  44.73  93.60 -167.729663
+
 4  40.39  27.69   60.373880
 
 ```python
@@ -114,7 +119,7 @@ for ax in axes:
 
 plt.show()
 ```
-![png](myplot1.png)
+![png](myplot2.png)
 
 ```python
 # Plot data points and predicted hyperplane to gif
