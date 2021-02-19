@@ -24,7 +24,7 @@ Y = df['z']
 <div>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr align=right>
       <th></th>
       <th>x</th>
       <th>y</th>
@@ -32,31 +32,31 @@ Y = df['z']
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr align=right>
       <th>0</th>
       <td>64.32</td>
       <td>6.21</td>
       <td>236.522049</td>
     </tr>
-    <tr>
+    <tr align=right>
       <th>1</th>
       <td>9.76</td>
       <td>86.65</td>
       <td>-283.187014</td>
     </tr>
-    <tr>
+    <tr align=right>
       <th>2</th>
       <td>18.33</td>
       <td>32.97</td>
       <td>-48.807113</td>
     </tr>
-    <tr>
+    <tr align=right>
       <th>3</th>
       <td>44.73</td>
       <td>93.60</td>
       <td>-167.729663</td>
     </tr>
-    <tr>
+    <tr align=right>
       <th>4</th>
       <td>40.39</td>
       <td>27.69</td>
