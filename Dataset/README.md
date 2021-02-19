@@ -20,17 +20,51 @@ X = df[['x', 'y']]
 Y = df['z']
 ```
 
-       x      y           z
-       
-0  64.32   6.21  236.522049
 
-1   9.76  86.65 -283.187014
-
-2  18.33  32.97  -48.807113
-
-3  44.73  93.60 -167.729663
-
-4  40.39  27.69   60.373880
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>64.32</td>
+      <td>6.21</td>
+      <td>236.522049</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>9.76</td>
+      <td>86.65</td>
+      <td>-283.187014</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>18.33</td>
+      <td>32.97</td>
+      <td>-48.807113</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>44.73</td>
+      <td>93.60</td>
+      <td>-167.729663</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>40.39</td>
+      <td>27.69</td>
+      <td>60.373880</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ```python
 # Prepare data for visualization
@@ -124,8 +158,7 @@ plt.show()
 ```python
 # Plot data points and predicted hyperplane to gif
 fig3 = plt.figure(figsize=(4, 4))
-fig3.tight_layout()
-fig3.suptitle('$rmse = %.2f$' %rmse, fontsize=20)
+fig3.tight_layout())
 ax = fig3.add_subplot(111, projection='3d')
 ax.plot(x, y, z, color='k', zorder=15, linestyle='none', marker='o', alpha=0.5, markersize=4)
 ax.scatter(xx_pred.flatten(), yy_pred.flatten(), predicted, facecolor=(0, 0, 0, 0), s=20, edgecolor='#70b3f0')
