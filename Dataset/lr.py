@@ -6,7 +6,7 @@ from PIL import Image
 
 # Data preperation
 df = pd.read_csv('mlm.csv')
-df.head()
+print(df.head())
 X = df[['x', 'y']]
 Y = df['z']
 
@@ -15,7 +15,7 @@ x = df['x']
 y = df['y']
 z = Y
 
-# Visualize data
+# Functions to visualize data
 def set_ax(ax):
     ax.set_xlabel('x', fontsize=12)
     ax.set_ylabel('y', fontsize=12)
@@ -35,6 +35,7 @@ def set_fig(fig, title, elev1, azim1, elev2, azim2, elev3, azim3):
     fig.tight_layout()
     return axes
 
+# Plot data points
 plt.style.use('default')
 fig = plt.figure(figsize=(12, 4))
 axes = set_fig(fig, 'scatter plot', 50, 20, 28, 10, 70, 60)
@@ -83,12 +84,12 @@ for ax in axes:
     ax.plot(x, y, z, color='k', zorder=15, linestyle='none', marker='o', alpha=0.5, markersize=4)
     ax.scatter(xx_pred.flatten(), yy_pred.flatten(), predicted, facecolor=(0, 0, 0, 0), s=20, edgecolor='#70b3f0')
     set_ax(ax)
+
 plt.show()
 
 # Plot data points and predicted hyperplane to gif
 fig3 = plt.figure(figsize=(4, 4))
 fig3.tight_layout()
-fig3.suptitle('$rmse = %.2f$' %rmse, fontsize=20)
 ax = fig3.add_subplot(111, projection='3d')
 ax.plot(x, y, z, color='k', zorder=15, linestyle='none', marker='o', alpha=0.5, markersize=4)
 ax.scatter(xx_pred.flatten(), yy_pred.flatten(), predicted, facecolor=(0, 0, 0, 0), s=20, edgecolor='#70b3f0')
